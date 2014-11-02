@@ -177,8 +177,6 @@ recv_data(int32_t sockfd, char* buf, int32_t length)
 void
 clean(struct epoll_event* equeue, int32_t cnt, struct addrinfo** res)
 {
-    (uint32_t)cnt;
-
     if ((equeue != NULL) && (cnt > 0)) {
         size_t idx;
         for (idx = 0; idx < cnt; ++idx) {
